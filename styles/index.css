@@ -1,0 +1,17 @@
+
+:root {
+    --text-nav-light: #F9F9F9;
+    --text-light: slategrey;
+    --text-dark: #2c3e50;
+    --highlight-light: #f92672;
+
+    color: var(--text-dark);
+    background-color: var(--bg-dark);
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
