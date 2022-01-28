@@ -27,8 +27,10 @@
                     </tr>
                     <?php foreach ($services as $service) : ?>
                     <tr>
-                    <td><?= $service['name']; ?></th>
-                        <td><?= $service['state']; ?></th>
+                    <td><a href="<?= $service['url']; ?>"><?= $service['name']; ?></a></th>
+                        <td style="background-color: <?php echo ($service['state'] == 'up') ? 'var(--status-up-color)' : 'var(--status-down-color)'; ?>">
+                            <?= $service['state']; ?>
+                        </th>
                         <td><?= $service['uptime']; ?>%</th>
                     </tr>
                     <?php endforeach; ?>

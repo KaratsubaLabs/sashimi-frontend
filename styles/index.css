@@ -8,6 +8,9 @@
     color: var(--text-dark);
     background-color: var(--bg-dark);
     font-family: 'Courier New', monospace;
+
+    --status-up-color: green;
+    --status-down-color: red;
 }
 
 body {
